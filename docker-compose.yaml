@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   youtube-video-download-worker-0:
-    image: "panda1024/pku-ece-cv:v2.3"
+    image: "poikkjfg200/pku-ece-cv:02-17"
     deploy:
       replicas: 12
     environment:
@@ -13,5 +13,5 @@ services:
       [
           "bash",
           "-c",
-          "conda run --no-capture-output --name pku-ece-cv rq worker GCC_spider --url redis://43.156.121.84:cGt1X3JlZGlz@:6379 --path ./ --name  GCC-spider-worker-$$RANDOM"
+          "conda run --no-capture-output --name pku-ece-cv rq worker GCC_spider --url redis://:cGt1X3JlZGlz@43.156.121.84:6379 --path ./ --name  GCC-spider-worker-$$RANDOM"
       ]

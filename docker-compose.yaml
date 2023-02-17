@@ -13,5 +13,5 @@ services:
       [
           "bash",
           "-c",
-          "conda run --no-capture-output --name pku-ece-cv rq worker GCC_spider --url redis://:cGt1X3JlZGlz@43.153.206.200:6379 --path ./ --name  GCC-spider-worker-$$RANDOM"
+          "conda run --no-capture-output --name pku-ece-cv rq worker GCC_spider --url redis://43.156.121.84:cGt1X3JlZGlz@:6379 --path ./ --name  GCC-spider-worker-$$RANDOM"
       ]
